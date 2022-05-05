@@ -19,24 +19,10 @@ public class PoolDemo : MonoBehaviour
                 poolObjNumber,
                 
                 //インスタンス化の方法を教える
-                InstantiatePoolObj
+                ()=>Instantiate(poolObjPrefab).GetComponent<PoolObj>()
             );
     }
 
-    /// <summary>
-    /// PoolObjのインスタンス化の方法
-    /// </summary>
-    /// <returns></returns>
-    private PoolObj InstantiatePoolObj()
-    {
-        var poolObj = Instantiate(poolObjPrefab).GetComponent<PoolObj>();
-        
-        //ボタンがクリックされたとき、プールに返却するように設定
-        poolObj.GetComponent<Button>().onClick.AddListener(() => pool.Return(poolObj));
-        
-        return poolObj;
-    }
-    
     /// <summary>
     /// リストに追加ボタンが押された際の挙動
     /// </summary>

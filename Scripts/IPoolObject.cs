@@ -1,5 +1,7 @@
 
 
+using System;
+
 namespace WB.Pool
 {
     /// <summary>
@@ -18,6 +20,10 @@ namespace WB.Pool
         /// プールに入った際(インスタンス化直後 & プールに返却された際)に呼ばれるメソッド
         /// </summary>
         void Initialize();
-        
+
+        /// <summary>
+        /// インスタンスをプールに返すメソッドを渡す
+        /// </summary>
+        void SetReturnMethod(Action returnMethod);
     }
 }

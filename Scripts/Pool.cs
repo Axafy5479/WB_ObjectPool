@@ -61,11 +61,21 @@ namespace WB.Pool
     /// インスタンスを生成し、プールに入れる
     /// </summary>
     /// <param name="id"></param>
-    protected virtual void InstantiatePoolObj(int id)
+    protected virtual T InstantiatePoolObj(int id)
     {
+        //ユーザーから指定された方法でインスタンス化を行う
         T instance = GetNewInstance();
+            
+        //インスタンス化された順番を通知
         instance.SetId(id);
+            
+        //プールに返す方法を伝える
+        instance.SetReturnMethod(()=>Return(instance));
+
+        //インスタンスを返す
         Return(instance);
+     
+        return instance;
     }
 
     /// <summary>

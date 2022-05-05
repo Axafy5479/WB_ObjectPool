@@ -60,19 +60,14 @@ namespace WB.Pool
         /// 新しくインスタンス化する
         /// </summary>
         /// <param name="id">id(何番目のインスタンスか)</param>
-        protected override void InstantiatePoolObj(int id)
+        protected override T InstantiatePoolObj(int id)
         {
-            //ユーザーから指定された方法でインスタンス化を行う
-            IPoolObject instance = GetNewInstance();
-            
-            //インスタンス化された順番を通知
-            instance.SetId(id);
+            T instance = base.InstantiatePoolObj(id);
             
             //オブジェクトの名前を適当に設定
-            ((MonoBehaviour) instance).gameObject.name = instance.GetType() + id.ToString();
-            
-            //インスタンスを返す
-            Return((T)instance);
+            ((MonoBehaviour)(IPoolObject)instance).gameObject.name = instance.GetType() + id.ToString();
+
+            return instance;
         }
     }
 }

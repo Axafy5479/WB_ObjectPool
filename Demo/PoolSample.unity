@@ -860,7 +860,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1483323111}
-        m_TargetAssemblyTypeName: PoolDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: PoolDemo, WB.Pool
         m_MethodName: AddObjectButton
         m_Mode: 1
         m_Arguments:
@@ -1074,11 +1074,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1483323107}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a142d18217991ea45aea33defb2e5c93, type: 3}
+  m_Script: {fileID: 11500000, guid: 23fcf6e19dbc0cc46a3ef5a345efe1c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   poolObjNumber: 5
-  poolObjPrefab: {fileID: 5900735060088181206, guid: 1fcfc093358869d43a27149b863d0954, type: 3}
+  poolObjPrefab: {fileID: 5900735060088181206, guid: fcc5080f1b7e8c642b12eafc3d171de7, type: 3}
   layoutGroupTrn: {fileID: 394707498}
 --- !u!1 &1949404192
 GameObject:

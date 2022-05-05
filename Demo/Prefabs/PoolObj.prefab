@@ -170,7 +170,7 @@ GameObject:
   - component: {fileID: 3887983315443593776}
   - component: {fileID: 2821186492273195383}
   - component: {fileID: 5716505817222322344}
-  - component: {fileID: 7875241825376757043}
+  - component: {fileID: 2034396264608052824}
   m_Layer: 5
   m_Name: PoolObj
   m_TagString: Untagged
@@ -281,8 +281,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7875241825376757043}
-        m_TargetAssemblyTypeName: PoolObj, Assembly-CSharp
+      - m_Target: {fileID: 2034396264608052824}
+        m_TargetAssemblyTypeName: PoolObj, WB.Pool
         m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
@@ -293,7 +293,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &7875241825376757043
+--- !u!114 &2034396264608052824
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -302,7 +302,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5900735060088181206}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67303f74184a5dc41aec99583f91c35f, type: 3}
+  m_Script: {fileID: 11500000, guid: 64d62e07006ffea4394bee2a262d65af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   idText: {fileID: 7601174321550199924}
